@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "preserve",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es7",
+      "es2015.generator",
+      "es2015.symbol",
+      "es2015.promise"
+    ],
+    "allowJs": true
+  },
+  "files": [],
+  "exclude": [
+    "node_modules"
+  ]
+}
