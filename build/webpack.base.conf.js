@@ -8,11 +8,11 @@ module.exports = {
         path: path.resolve(__dirname, '../dist'),
         filename: '[name].js'
     },
-    externals: {
-        vue: 'Vue'
-    },
+//    externals: {
+//        vue: 'Vue'
+//    },
     resolve: {
-        extensions: ['', '.ts', '.tsx', '.js']
+        extensions: ['', '.ts', '.tsx', '.d.ts', '.js']
     },
     module: {
         preLoaders: [
@@ -30,7 +30,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.tsx?$/,
-                exclude: /node_modules/,
+//                exclude: /node_modules/,
                 loader: 'babel-loader!ts-loader'
             },
 //      {

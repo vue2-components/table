@@ -1,9 +1,8 @@
 import * as Vue from 'vue'
-import Component from '../src/utils/component'
-import Table from '../src'
+import Component from './utils/component'
 
-@Component
-class App extends Vue {
+@Component({})
+export default class Table extends Vue {
     msg: number
 
     data() {
@@ -13,6 +12,7 @@ class App extends Vue {
     }
 
     mounted() {
+        this.greet()
 
     }
 
@@ -20,12 +20,12 @@ class App extends Vue {
         return 'computed ' + this.msg
     }
 
+    greet() {
+    }
+
     render(h) {
         return <div>
-            <Table></Table>
+            我是table
         </div>
     }
 }
-new App({
-    el: '#app'
-})
